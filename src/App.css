@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Lateef:wght@300;400;500;600&display=swap");
+
+:root {
+  --fontFamily: "Lateef", serif;
+  --primaryClr: #61dafb;
+  --navBGClr: #000;
+  --pageBGClr: rgba(0, 0, 0, 0.85);
+  --whiteClr: #fff;
+  --border: 1px solid red;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fontFamily);
+  width: 100%;
+  height: 100vh;
+  background-color: var(--pageBGClr);
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 2rem;
+  background-color: var(--navBGClr);
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.navbar__logo img {
+  width: 40px;
+}
+
+.navbar__logo h3 {
+  color: var(--primaryClr);
+  margin-left: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.navbar__projectname span {
+  color: var(--whiteClr);
+  font-size: 1.5rem;
+}
+
+.content {
+  max-width: 500px;
+  margin: 5rem auto;
+  color: var(--whiteClr);
+}
+
+.content h1 {
+  font-size: 4rem;
+}
+
+.content ul {
+  margin-left: 2rem;
+}
+
+.content ul li {
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+
+::marker {
+  color: var(--primaryClr);
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .navbar {
+    padding: 0.8rem 1rem;
+  }
+
+  .content {
+    padding: 0 1rem;
+    margin-top: 3rem;
+  }
+
+  .content h1 {
+    font-size: 2rem;
+  }
+
+  .content ul li {
+    font-size: 1.2rem;
+  }
+}
+
+.content__backimage {
+  position: absolute;
+  top: 10%;
+  right: 0;
+  opacity: 0.1;
+}
